@@ -1,0 +1,14 @@
+C:\Users\adiya\KutuphaneUygulamasi\bin\Debug\net10.0\KutuphaneUygulamasi.exe
+C:\Users\adiya\KutuphaneUygulamasi\bin\Debug\net10.0\KutuphaneUygulamasi.deps.json
+C:\Users\adiya\KutuphaneUygulamasi\bin\Debug\net10.0\KutuphaneUygulamasi.runtimeconfig.json
+C:\Users\adiya\KutuphaneUygulamasi\bin\Debug\net10.0\KutuphaneUygulamasi.dll
+C:\Users\adiya\KutuphaneUygulamasi\bin\Debug\net10.0\KutuphaneUygulamasi.pdb
+C:\Users\adiya\KutuphaneUygulamasi\obj\Debug\net10.0\KutuphaneUygulamasi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adiya\KutuphaneUygulamasi\obj\Debug\net10.0\KutuphaneUygulamasi.AssemblyInfoInputs.cache
+C:\Users\adiya\KutuphaneUygulamasi\obj\Debug\net10.0\KutuphaneUygulamasi.AssemblyInfo.cs
+C:\Users\adiya\KutuphaneUygulamasi\obj\Debug\net10.0\KutuphaneUygulamasi.csproj.CoreCompileInputs.cache
+C:\Users\adiya\KutuphaneUygulamasi\obj\Debug\net10.0\KutuphaneUygulamasi.dll
+C:\Users\adiya\KutuphaneUygulamasi\obj\Debug\net10.0\refint\KutuphaneUygulamasi.dll
+C:\Users\adiya\KutuphaneUygulamasi\obj\Debug\net10.0\KutuphaneUygulamasi.pdb
+C:\Users\adiya\KutuphaneUygulamasi\obj\Debug\net10.0\KutuphaneUygulamasi.genruntimeconfig.cache
+C:\Users\adiya\KutuphaneUygulamasi\obj\Debug\net10.0\ref\KutuphaneUygulamasi.dll
