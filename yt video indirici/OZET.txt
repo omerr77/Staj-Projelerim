@@ -1,0 +1,21 @@
+YouTube Video İndirici Projesi
+
+Python ile bir YouTube video indirme programı yaptım. Terminalden çalışıyor, 
+YouTube linki verince videoyu bilgisayara indiriyor.
+
+Program şöyle çalışıyor: Önce YouTube linkini istiyor, sonra video hakkında 
+bilgileri gösteriyor. Hangi kalitelerde indirilebileceğini listeliyor, sen 
+istediğin kaliteyi seçiyorsun. Sonra nereye kaydedileceğini soruyor ve 
+videoyu indiriyor. İndirme sırasında ne kadar ilerlediğini de gösteriyor.
+
+yt-dlp kütüphanesini kullandım çünkü YouTube'dan video çekmek için en iyi 
+yol bu. Ayrıca os, re ve sys modüllerini de kullandım dosya işlemleri ve 
+link kontrolü için.
+
+Programı çalıştırmak için terminalde python youtube_downloader.py yazıyorsun. 
+Sonra program seni adım adım yönlendiriyor, link giriyorsun, kalite seçiyorsun 
+falan. Oldukça basit aslında.
+
+Projede youtube_downloader.py ana dosya, requirements.txt'de gerekli 
+kütüphaneler var. baslat.bat dosyası da var kolay başlatmak için.
+
