@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sticky Header/Footer Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Sticky Header -->
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="logo">K</div>
+        <div class="brand-text">
+          <div class="brand-title">Sticky Demo</div>
+          <div class="brand-subtitle">Header & Footer (CSS position: sticky)</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#ornekler">Örnekler</a>
+        <a href="#farklar">Sticky vs Fixed</a>
+        <a href="#ipuclari">İpuçları</a>
+      </nav>
+
+      <div class="controls">
+        <label class="toggle">
+          <input type="checkbox" id="footerMode" />
+          <span class="toggle-ui"></span>
+          <span class="toggle-text">Footer: Fixed</span>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="hero">
+      <h1>Yapışkan (Sticky) Header/Footer</h1>
+      <p>
+        Sayfayı kaydırırken <b>header</b> üstte görünür kalır.
+        <b>Footer</b> ise sayfanın altına gelince yapışır (sticky) veya
+        istersen sürekli ekranda kalacak şekilde (fixed) çalıştırabilirsin.
+      </p>
+
+      <div class="callouts">
+        <div class="callout">
+          <div class="callout-title">Sticky Header</div>
+          <div class="callout-text">
+            <code>position: sticky; top: 0;</code>
+          </div>
+        </div>
+        <div class="callout">
+          <div class="callout-title">Sticky Footer</div>
+          <div class="callout-text">
+            <code>position: sticky; bottom: 0;</code>
+          </div>
+        </div>
+        <div class="callout">
+          <div class="callout-title">Fixed (Karşılaştırma)</div>
+          <div class="callout-text">
+            <code>position: fixed;</code>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ornekler" class="section">
+      <h2>Scroll Test Alanı</h2>
+      <p class="muted">
+        Aşağı kaydır. Header hep üstte kalacak. Footer ise moduna göre davranacak.
+      </p>
+
+      <div class="grid">
+        <!-- Uzun içerik üretmek için kartlar -->
+        <article class="card">
+          <h3>1) Basit kullanım</h3>
+          <p><code>.site-header { position: sticky; top: 0; }</code></p>
+          <p class="muted">Üst menü kaydırmada görünür kalır.</p>
+        </article>
+
+        <article class="card">
+          <h3>2) z-index</h3>
+          <p><code>z-index</code> vermezsen içerik üstüne binebilir.</p>
+          <p class="muted">Header için genelde 1000 yeter.</p>
+        </article>
+
+        <article class="card">
+          <h3>3) Arkaplan şart</h3>
+          <p>Sticky eleman transparan olursa alttaki yazı karışır.</p>
+          <p class="muted">Bu yüzden background veriyoruz.</p>
+        </article>
+
+        <article class="card">
+          <h3>4) Offset (top/bottom)</h3>
+          <p>Header için <code>top</code>, footer için <code>bottom</code> kullanılır.</p>
+          <p class="muted">Örn: <code>top: 12px</code></p>
+        </article>
+      </div>
+
+      <div class="filler">
+        <h3>Uzun içerik (demo)</h3>
+        <p class="muted">Aşağı doğru kaydırdıkça sticky davranışını hissedeceksin.</p>
+
+        <div class="list">
+          <div class="row"><span class="badge">01</span><span>Kaydırmaya devam et…</span></div>
+          <div class="row"><span class="badge">02</span><span>Header üstte sabit.</span></div>
+          <div class="row"><span class="badge">03</span><span>Footer modunu üstten değiştirebilirsin.</span></div>
+          <div class="row"><span class="badge">04</span><span>Sticky, parent overflow ile bozulabilir.</span></div>
+          <div class="row"><span class="badge">05</span><span>Bu sayfa özellikle test için uzatıldı.</span></div>
+          <div class="row"><span class="badge">06</span><span>Biraz daha aşağı…</span></div>
+          <div class="row"><span class="badge">07</span><span>Biraz daha…</span></div>
+          <div class="row"><span class="badge">08</span><span>Neredeyse…</span></div>
+          <div class="row"><span class="badge">09</span><span>Footer altta…</span></div>
+          <div class="row"><span class="badge">10</span><span>Gördün mü? 😄</span></div>
+        </div>
+
+        <!-- ekstra boşluk -->
+        <div class="spacer" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section id="farklar" class="section">
+      <h2>Sticky vs Fixed</h2>
+      <div class="two-col">
+        <div class="panel">
+          <h3>Sticky</h3>
+          <ul>
+            <li>Normal akışta başlar, scroll ile “yapışır”.</li>
+            <li>Parent konteyner sınırlarına saygı duyar.</li>
+            <li>Dashboard üst bar için çok iyi.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Fixed</h3>
+          <ul>
+            <li>Her zaman viewport’a sabitlenir.</li>
+            <li>Layout’u kaplayabilir → padding eklemek gerekir.</li>
+            <li>WhatsApp butonu / sticky CTA gibi şeyler için iyi.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="ipuclari" class="section">
+      <h2>Sticky çalışmıyorsa (en sık neden)</h2>
+      <div class="warning">
+        <p>
+          Sticky çoğu zaman şu yüzden çalışmaz:
+          parent elemanda <code>overflow: hidden/auto/scroll</code> vardır.
+        </p>
+        <p class="muted">
+          Çözüm: Sticky elementin parent'ında overflow'u kaldır veya farklı bir wrapper kullan.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sticky Footer (mode: sticky / fixed) -->
+  <footer class="site-footer" id="footer">
+    <div class="footer-inner">
+      <span>© 2026 Sticky Demo</span>
+      <span class="sep">•</span>
+      <a href="#top">Yukarı çık</a>
+      <span class="sep">•</span>
+      <span class="muted">Footer modunu üstten değiştirebilirsin.</span>
+    </div>
+  </footer>
+
+  <!-- Fixed yardımcı buton (karşılaştırma için) -->
+  <button class="to-top" id="toTop" title="Yukarı">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
