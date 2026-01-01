@@ -1,0 +1,7 @@
+SAYI TAHMİN OYUNU - UYGULAMA ÖZETİ
+
+Bu uygulama Python programlama diliyle yazılmış terminal üzerinden çalışan bir sayı tahmin oyunudur. Bilgisayar 1 ile 100 arasında rastgele bir sayı tutar ve kullanıcı bu sayıyı tahmin etmeye çalışır.
+
+Oyun başladığında bilgisayar random modülünü kullanarak rastgele bir sayı seçer. Kullanıcı tahmin yaptıkça program, girilen sayıyı tutulan sayıyla karşılaştırır. Tahmin küçükse "daha yüksek bir sayı deneyin", büyükse "daha düşük bir sayı deneyin" mesajı gösterilir. Doğru sayı bulunduğunda oyun sonlanır ve kaç tahminde bulunduğu gösterilir.
+
+Programda while döngüsü kullanılarak kullanıcı doğru sayıyı bulana kadar sürekli tahmin alınır. if, elif ve else koşul yapılarıyla tahmin kontrolü yapılır ve buna göre uygun mesajlar gösterilir. try-except bloğu sayesinde geçersiz girişlerde hata vermez, uyarı mesajı gösterilir. Tüm oyun mantığı sayi_tahmin_oyunu fonksiyonu içinde toplanmıştır. Program Türkçe mesajlar kullanır ve kullanıcı dostu bir arayüze sahiptir.
