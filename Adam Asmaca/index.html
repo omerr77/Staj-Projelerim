@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Adam Asmaca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game">
+
+    <div class="left">
+        <h3>❌ Yanlış Harfler</h3>
+        <div id="yanlislar"></div>
+        <button onclick="baslat()">🔄 Reset</button>
+    </div>
+
+    <div class="center">
+        <h1>🎯 Adam Asmaca</h1>
+        <p id="kategori"></p>
+
+        <div id="kelime" class="kelime"></div>
+
+        <input type="text" id="harf" maxlength="1">
+        <button onclick="tahmin()">Tahmin</button>
+
+        <p id="bilgi"></p>
+    </div>
+
+    <div class="right">
+        <canvas id="c" width="350" height="450"></canvas>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
